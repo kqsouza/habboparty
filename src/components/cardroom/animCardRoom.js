@@ -16,4 +16,18 @@ $(document).ready(function () {
       });
     }
   );
+
+  $(".fa-play").click(function () {
+    let tl = anime.timeline({
+      easing: "easeOutExpo",
+      duration: 300,
+    });
+    tl.add({
+      targets: this,
+      fontSize: "70px",
+    }).add({
+      targets: this,
+      fontSize: "80px",
+    });
+  });
 });
