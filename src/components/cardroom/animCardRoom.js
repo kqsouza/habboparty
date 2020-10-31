@@ -8,11 +8,21 @@ $(document).ready(function () {
         targets: this.querySelector(".fa-play"),
         rotate: "10deg",
       });
+      anime({
+        targets: this,
+        scale: 1.03,
+        duration: 250,
+      });
     },
     function () {
       anime({
         targets: this.querySelector(".fa-play"),
         rotate: "0deg",
+      });
+      anime({
+        targets: this,
+        scale: 1,
+        duration: 250,
       });
     }
   );
@@ -20,7 +30,7 @@ $(document).ready(function () {
   $(".fa-play").click(function () {
     let tl = anime.timeline({
       easing: "easeOutExpo",
-      duration: 300,
+      duration: 250,
     });
     tl.add({
       targets: this,
