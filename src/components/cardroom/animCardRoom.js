@@ -27,17 +27,41 @@ $(document).ready(function () {
     }
   );
 
-  $(".fa-play").click(function () {
+  $(".cardroom").click(function () {
     let tl = anime.timeline({
       easing: "easeOutExpo",
       duration: 250,
     });
     tl.add({
-      targets: this,
+      targets: this.querySelector(".fa-play"),
       fontSize: "70px",
     }).add({
-      targets: this,
+      targets: this.querySelector(".fa-play"),
       fontSize: "80px",
+    });
+  });
+
+  $(".fa-star").click(function () {
+    let tl = anime.timeline({
+      easing: "linear",
+      duration: 100,
+    });
+    tl.add({
+      targets: this,
+      fontSize: "22px",
+    }).add({
+      targets: this,
+      fontSize: "25px",
+      color: "rgb(255,255,0)",
+    });
+  });
+
+  $(".roomname").hover(function () {
+    anime({
+      easing: "linear",
+      targets: this.querySelector(".roomname i"),
+      opacity: 1,
+      duration: 150,
     });
   });
 });

@@ -5,8 +5,14 @@ import CardRoom from "./components/cardroom/CardRoom";
 
 ReactDOM.render(
   <div>
-    <CardRoom />
-    <CardRoom />
+    <div className="row">
+      <div className="col-md-4">
+        <CardRoom />
+      </div>
+      <div className="col-md-4">
+        <CardRoom />
+      </div>
+    </div>
   </div>,
   document.getElementById("root")
 );

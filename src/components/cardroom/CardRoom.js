@@ -15,12 +15,15 @@ class CardRoom extends React.Component {
       <div className="cardroom">
         <div className="cardtop">
           <i className="fas fa-play"></i>
+          <i class="far fa-star"></i>
         </div>
         <div className="carddescription">
           <p>
             <i className="fas fa-users"></i> 1
           </p>
-          <p>Nome da sala 1 Nome da sala 1 </p>
+          <p className="roomname">
+            Nome da sala 1 Nome da sala 1 <i class="far fa-plus-square"></i>
+          </p>
           <p>Pop, Rock, MPB</p>
           <p>
             <i className="fas fa-lock"></i>
