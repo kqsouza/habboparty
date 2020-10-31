@@ -1,0 +1,109 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap";
+/*# sourceMappingURL=CardRoom.css.map */
+body {
+  background-image: url("../../assets/19720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cardroom {
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 290px;
+  height: 450px;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  position: relative;
+  z-index: 5;
+  -webkit-filter: drop-shadow(7px 9px 7px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(7px 9px 7px rgba(0, 0, 0, 0.35));
+  .cardtop {
+    height: 75%;
+    width: 100%;
+    position: relative;
+    z-index: 11;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    i {
+      color: white;
+      z-index: 1;
+      font-size: 80px;
+      margin-bottom: 100px;
+    }
+  }
+  .carddescription {
+    width: 100%;
+    height: 25%;
+    position: relative;
+    mix-blend-mode: normal;
+    z-index: 0;
+    color: white;
+    padding-left: 15px;
+    padding-top: 7px;
+    font-family: "Nunito";
+    font-weight: 700;
+    p {
+      margin: 0;
+      &:nth-child(2) {
+        margin-top: 3px;
+        font-size: 20px;
+        width: 250px;
+        line-height: 20px;
+      }
+      &:nth-child(3) {
+        margin-top: 8px;
+        color: #bdbd12;
+      }
+      &:nth-child(4) {
+        position: absolute;
+        right: 15px;
+        bottom: 5px;
+      }
+    }
+    .profile-circle {
+      border: 1px solid yellow;
+      position: absolute;
+      right: 15px;
+      bottom: 100px;
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      background-color: #02051f;
+      -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.25);
+      box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .backSkew {
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    width: 310px;
+    height: 300px;
+    -webkit-transform: skewY(-30deg);
+    transform: skewY(-30deg);
+    background: rgba(2, 5, 31, 0.822);
+    mix-blend-mode: normal;
+    z-index: -10;
+    border: 1px solid blue;
+  }
+}
