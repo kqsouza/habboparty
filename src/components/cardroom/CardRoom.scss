@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*# sourceMappingURL=CardRoom.css.map */
 body {
-  background-image: url("../../assets/19720.jpg");
+  background-image: url("../../assets/backonlytitle.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 .cardroom {
   margin-top: 30px;
@@ -79,10 +82,57 @@ body {
         font-size: 20px;
         width: 250px;
         line-height: 20px;
+        position: relative;
 
-        i {
+        .boxInfo {
+          width: 150px;
+          height: 100px;
+          position: absolute;
+          top: -105px;
+          left: 0;
+          border: 1px solid yellow;
+          background-color: rgba(0, 0, 0, 0.8);
+          overflow: scroll;
+          overflow-x: hidden;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+          font-family: "Nunito", "Poppins", "Montserrat", "Roboto", sans-serif;
+          font-weight: 100;
+          font-size: 15px;
+          line-height: 15px;
+          padding: 1px 3px;
           opacity: 0;
-          cursor: pointer;
+          user-select: none;
+
+          .boxTitle {
+            font-weight: 700;
+            color: rgb(161, 157, 157);
+            margin-bottom: 6px;
+            text-align: center;
+          }
+
+          .boxDesc {
+            display: flex;
+            justify-content: start;
+            line-break: normal;
+            font-size: 15px;
+            line-height: 15px;
+            width: 100%;
+            font-weight: 300;
+          }
+
+          i {
+            position: sticky;
+            bottom: 5px;
+            right: 0;
+            margin-left: 110px;
+            margin-bottom: 30px;
+          }
+
+          &::-webkit-scrollbar {
+            width: 0px; /* Remove scrollbar space */
+            background: transparent; /* Optional: just make scrollbar invisible */
+          }
         }
       }
       &:nth-child(3) {
@@ -100,8 +150,8 @@ body {
       position: absolute;
       right: 15px;
       bottom: 100px;
-      width: 115px;
-      height: 115px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       background-color: #02051f;
       -webkit-box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.25);

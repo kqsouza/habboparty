@@ -48,7 +48,7 @@ $(document).ready(function () {
     });
     tl.add({
       targets: this,
-      fontSize: "22px",
+      fontSize: "23px",
     }).add({
       targets: this,
       fontSize: "25px",
@@ -56,12 +56,41 @@ $(document).ready(function () {
     });
   });
 
-  $(".roomname").hover(function () {
-    anime({
-      easing: "linear",
-      targets: this.querySelector(".roomname i"),
-      opacity: 1,
-      duration: 150,
-    });
-  });
+  $(".roomname").hover(
+    function () {
+      anime({
+        targets: this.querySelector(".boxInfo"),
+        opacity: 1,
+        easing: "easeOutQuint",
+        duration: 250,
+        delay: 200,
+      });
+    },
+    function () {
+      anime({
+        targets: this.querySelector(".boxInfo"),
+        opacity: 0,
+        easing: "linear",
+        duration: 150,
+        delay: 3600,
+      });
+    }
+  );
+
+  /*$(".boxInfo").hover(
+    function () {
+      anime({
+        targets: this,
+        opacity: 1,
+        easing: "linear",
+      });
+    },
+    function () {
+      anime({
+        targets: this,
+        opacity: 0,
+        easing: "linear",
+      });
+    }
+  );*/
 });
