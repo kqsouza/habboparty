@@ -1,0 +1,23 @@
+.logotipo h1 {
+  color: white;
+  font-family: "Neon";
+  font-size: 40px;
+  position: relative;
+  z-index: 0;
+  width: 181px;
+}
+
+.logotipo h1 i {
+  color: #12b9a9;
+  font-size: 60px;
+  position: absolute;
+  top: -4px;
+  left: 20px;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: "Neon";
+  src: url("../../assets/Lollipoptron-7GPD.ttf");
+}
+/*# sourceMappingURL=logotipo.css.map */

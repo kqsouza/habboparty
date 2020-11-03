@@ -3,6 +3,8 @@ import React from "react";
 import "./Menu.css";
 import "./animMenu.js";
 
+import Logotipo from "../logotipo/Logotipo";
+
 export default class Menu extends React.Component {
   render() {
     return (
@@ -29,17 +31,7 @@ export default class Menu extends React.Component {
               </li>
               <li class="nav__list-item">
                 <a href="#" class="hover-target">
-                  Studio
-                </a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="hover-target">
-                  News
-                </a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="hover-target">
-                  Contact
+                  <Logotipo />
                 </a>
               </li>
             </ul>
