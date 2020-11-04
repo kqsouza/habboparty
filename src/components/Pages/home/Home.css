@@ -1,0 +1,10 @@
+#homepage {
+  color: white;
+  border: 1px solid yellow;
+  height: 100vh;
+}
+
+#homepage .container-fluid {
+  padding: 0;
+}
+/*# sourceMappingURL=Home.css.map */
