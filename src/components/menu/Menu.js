@@ -30,9 +30,7 @@ export default class Menu extends React.Component {
                 </a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="hover-target">
-                  <Logotipo />
-                </a>
+                <a href="#" class="hover-target"></a>
               </li>
             </ul>
           </div>
