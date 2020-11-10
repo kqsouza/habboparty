@@ -1,4 +1,4 @@
-import $ from "jquery";
+/*import $ from "jquery";
 $(document).ready(function () {
   var app = (function () {
     var body = undefined;
@@ -24,3 +24,16 @@ $(document).ready(function () {
     init();
   })();
 });
+*/
+/*
+import anime from "animejs";
+import $ from "jquery";
+$(document).ready(function () {
+  $("a").click(function () {
+    anime({
+      targets: ".registerForm",
+      scale: 5,
+    });
+  });
+});
+*/

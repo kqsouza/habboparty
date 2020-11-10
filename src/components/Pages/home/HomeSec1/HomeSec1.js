@@ -9,8 +9,8 @@ export default class HomeSec1 extends React.Component {
   render() {
     return (
       <div id="homesec1">
-        <div className="row" style={{ height: "100%" }}>
-          <div className="col-md-6">
+        <div className="row" style={{ height: "100%", width: "100%" }}>
+          <div className="col-md-6" style={{ padding: "0" }}>
             <div className="left-cont-wrp">
               <h3>
                 Sala em <span>destaque</span> agora !
@@ -20,7 +20,7 @@ export default class HomeSec1 extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6" style={{ padding: "0" }}>
             <div className="right-cont-wrp">
               <div className="logo-cont-wrp">
                 <Logotipo />

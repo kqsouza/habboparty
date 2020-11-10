@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Menu.css";
+import "./animMenu.js";
 
 import Logotipo from "../logotipo/Logotipo";
 
@@ -84,9 +85,7 @@ export default class Menu extends React.Component {
                   </a>
                 </li>
                 <li className="nav__list-item">
-                  <a href="#" className="hover-target">
-                    {this.state.isRegisterActive}
-                  </a>
+                  <a href="#" className="hover-target"></a>
                 </li>
               </ul>
             </div>
