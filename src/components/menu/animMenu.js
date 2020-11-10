@@ -12,6 +12,7 @@ $(document).ready(function () {
     };
     var applyListeners = function applyListeners() {
       menu.addEventListener("click", function () {
+        console.log("Clicado");
         return toggleClass(body, "nav-active");
       });
     };
