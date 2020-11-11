@@ -9,7 +9,7 @@ export default class HomeSec1 extends React.Component {
   render() {
     return (
       <div id="homesec1">
-        <div className="row" style={{ height: "100%", width: "100%" }}>
+        <div className="row" style={{ height: "100%", margin: "0" }}>
           <div className="col-md-6" style={{ padding: "0" }}>
             <div className="left-cont-wrp">
               <h3>
