@@ -3,18 +3,19 @@
 #homesec1 {
   border: 1px dashed red;
   height: 100vh;
-  /*background: linear-gradient(
+  background: linear-gradient(
     90deg,
     rgba(0, 13, 40, 1) 9%,
     rgba(47, 14, 42, 1) 74%
-*/
+  );
   /*
   background-image: url("../../../../assets/backonly.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: lighten;*/
+  background-blend-mode: lighten;
+*/
   //background: linear-gradient(45deg, #0f1630 0%, #350d29 100%);
-  background: rgb(3, 12, 28);
+  //background: rgb(3, 12, 28);
 
   .left-cont-wrp {
     //font-family: "Poppins", sans-serif;
@@ -80,7 +81,7 @@
   font-family: "Gila";
   src: url("../../../../assets/fonts/GilaBold-DOG21.ttf");
 }
-/*
+
 @keyframes particles {
   0% {
     transform: translateY(0px);
@@ -559,7 +560,7 @@
   width: 2px;
   height: 2px;
 }
-*/
+
 //Make texts neon
 
 @font-face {
