@@ -70,12 +70,12 @@ export default class Menu extends React.Component {
           <div className="nav">
             <div className="nav__content">
               <ul className="nav__list">
-                <li className="nav__list-item active-nav">
+                <li className="nav__list-item">
                   <a href="#" className="hover-target">
                     Logar
                   </a>
                 </li>
-                <li className="nav__list-item">
+                <li className="nav__list-item active-nav">
                   <a
                     href="#"
                     onClick={this.switchRegister}

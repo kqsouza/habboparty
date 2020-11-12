@@ -12,8 +12,8 @@ export default class HomeSec1 extends React.Component {
         <div className="row" style={{ height: "100%", margin: "0" }}>
           <div className="col-md-6" style={{ padding: "0" }}>
             <div className="left-cont-wrp">
-              <h3>
-                Sala em <span>destaque</span> agora !
+              <h3 className="logo">
+                <span className="hrs">Sala em destaque agora !</span>
               </h3>
               <div className="box-glow">
                 <CardRoom />
@@ -22,12 +22,15 @@ export default class HomeSec1 extends React.Component {
           </div>
           <div className="col-md-6" style={{ padding: "0" }}>
             <div className="right-cont-wrp">
-              <div className="logo-cont-wrp">
-                <Logotipo />
-              </div>
-              <p>
-                Ouça, <br />
-                Toque <span>músicas</span> juntos !
+              <p className="logo">
+                <span className="hrs">
+                  Ouça,
+                  <br /> toque{" "}
+                  <span className="open">
+                    músicas <i class="fab fa-itunes-note"></i>
+                  </span>{" "}
+                  juntos !
+                </span>
               </p>
             </div>
           </div>
