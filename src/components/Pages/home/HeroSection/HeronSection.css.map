@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,cAAc;EACtB,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,wCAAwC,EAClD,wCAAwC,EACxC,2CAA2C;EAC7C,eAAe,EAAE,qBAAqB;EACtC,iBAAiB,EAAE,+BAA+B;EAClD,mBAAmB,EAAE,uBAAuB;CAC7C",
+    "sources": [
+        "HeronSection.scss"
+    ],
+    "names": [],
+    "file": "HeronSection.css"
+}

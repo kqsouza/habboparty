@@ -8,8 +8,16 @@ class Logotipo extends React.Component {
   render() {
     return (
       <div className="logotipo">
-        <h1>
-          Vinyl<i class="fas fa-compact-disc"></i>
+        <h1 style={{ fontSize: this.props.fontSz }}>
+          Vinyl
+          <i
+            class="fas fa-compact-disc"
+            style={{
+              fontSize: this.props.iconSz,
+              left: this.props.leftIcon,
+              top: this.props.topIcon,
+            }}
+          ></i>
         </h1>
       </div>
     );

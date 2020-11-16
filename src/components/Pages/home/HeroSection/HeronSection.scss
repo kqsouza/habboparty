@@ -1,0 +1,10 @@
+#herosection {
+  border: 1px solid blue;
+  height: 100vh;
+  background: url("../../../../assets/bgmanonly2.png"),
+    url("../../../../assets/bgelements.png"),
+    url("../../../../assets/bghomesection.png");
+  background-size: contain, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top right, bottom right;
+}

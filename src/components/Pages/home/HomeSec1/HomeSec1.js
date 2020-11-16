@@ -2,6 +2,7 @@ import React from "react";
 
 import CardRoom from "../../../cardroom/CardRoom";
 import Logotipo from "../../../logotipo/Logotipo";
+import Button from "../../../button/Button";
 
 import "./Homesec1.css";
 
