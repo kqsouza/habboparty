@@ -11,6 +11,7 @@ export default class Button extends React.Component {
         style={{
           background: this.props.bgbutton,
           backgroundSize: "400%",
+          boxShadow: this.props.boxSha,
         }}
       >
         {this.props.text}

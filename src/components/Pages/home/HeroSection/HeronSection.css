@@ -1,9 +1,30 @@
 #herosection {
-  border: 1px solid blue;
   height: 100vh;
   background: url("../../../../assets/bgmanonly2.png"), url("../../../../assets/bgelements.png"), url("../../../../assets/bghomesection.png");
   background-size: contain, cover, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top right, bottom right;
+}
+
+#herosection .wrp-cont-left img {
+  margin-top: 150px;
+  margin-left: 70px;
+}
+
+#herosection .wrp-cont-left p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #3cbfad;
+  margin-left: 70px;
+  margin-bottom: 0;
+}
+
+#herosection .wrp-cont-left p span {
+  color: #db2d8e;
+}
+
+#herosection .wrp-cont-left button {
+  margin-left: 240px;
+  margin-top: 80px;
 }
 /*# sourceMappingURL=HeronSection.css.map */
