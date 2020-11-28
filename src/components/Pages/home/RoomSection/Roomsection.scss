@@ -1,0 +1,196 @@
+@import "../../../variables";
+$line-color: hsla(22, 100, 0%, 0.15);
+#roomsection {
+  height: 1000px;
+  position: relative;
+  //background-color: #e5e5f7;
+  //background-image: -webkit-linear-gradient(#050a17, #1a273d);
+  //background: linear-gradient(60deg, #27e7ff, #00ca52);
+  background-color: #094266;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    background: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+    width: 800%;
+    position: absolute;
+    top: 0.3%;
+    right: -400%;
+    height: 800%;
+    opacity: 0.8;
+    z-index: 0;
+    /*
+    animation-name: rotate;
+    animation-duration: 140s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;*/
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-image: url("https://1.bp.blogspot.com/-gxsOcYWghHA/Xp_izTh4sFI/AAAAAAAAU8s/y637Fwg99qAuzW9na_NT_uApny8Vce95gCEwYBhgL/s1600/header-footer-gradient-bg.png");
+    box-shadow: 2px 8px 25px -1px rgba(0, 0, 0, 0.75);
+  }
+
+  .headerroom {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(11, 133, 86);
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .music {
+      height: 180px;
+      width: 180px;
+      position: relative;
+      right: 0;
+      z-index: 10;
+      border-radius: 50%;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+      background-color: #ffc107;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 230px;
+        width: 230px;
+        background-color: $pink-light-color;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: -26px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        margin: auto;
+        border-radius: 50%;
+      }
+      /*
+      &:after {
+        content: "";
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        top: 0;
+        bottom: 0;
+        left: -55px;
+        right: 0;
+        margin: auto;
+        border: 1px solid $blue-light-color;
+        background-color: #ff9800;
+        border-radius: 50%;
+        z-index: 1;
+      }
+*/
+      .sidebarmusic {
+        //width: 560px;
+        height: 200px;
+        position: absolute;
+        top: -12px;
+        left: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #05273cea;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+        opacity: 0;
+
+        i {
+          position: absolute;
+          top: 8px;
+          right: 20px;
+          color: $pink-light-color;
+          font-size: 30px;
+          cursor: pointer;
+          transition: color 700ms;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      .music-note {
+        position: relative;
+        left: 0;
+        right: 0;
+        font-size: 30px;
+        font-weight: 500;
+        bottom: 0;
+        top: 0;
+        padding-top: 18px;
+        z-index: 20;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        //background-color: $bg-dark-color;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        font-family: "Nunito";
+        background-image: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+
+          top: 0;
+          left: 0;
+          position: absolute;
+          background-color: #106d85;
+          z-index: -1;
+          filter: opacity(0.5);
+        }
+
+        span {
+          font-size: 50px;
+          color: $pink-light-color;
+
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

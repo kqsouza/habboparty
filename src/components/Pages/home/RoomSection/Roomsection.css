@@ -1,0 +1,193 @@
+#roomsection {
+  height: 1000px;
+  position: relative;
+  background-color: #094266;
+  overflow: hidden;
+}
+
+#roomsection::after {
+  content: "";
+  background: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+  width: 800%;
+  position: absolute;
+  top: 0.3%;
+  right: -400%;
+  height: 800%;
+  opacity: 0.8;
+  z-index: 0;
+  /*
+    animation-name: rotate;
+    animation-duration: 140s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;*/
+}
+
+#roomsection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-image: url("https://1.bp.blogspot.com/-gxsOcYWghHA/Xp_izTh4sFI/AAAAAAAAU8s/y637Fwg99qAuzW9na_NT_uApny8Vce95gCEwYBhgL/s1600/header-footer-gradient-bg.png");
+  -webkit-box-shadow: 2px 8px 25px -1px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 8px 25px -1px rgba(0, 0, 0, 0.75);
+}
+
+#roomsection .headerroom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #0b8556;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#roomsection .headerroom .music {
+  height: 180px;
+  width: 180px;
+  position: relative;
+  right: 0;
+  z-index: 10;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ffc107;
+  /*
+      &:after {
+        content: "";
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        top: 0;
+        bottom: 0;
+        left: -55px;
+        right: 0;
+        margin: auto;
+        border: 1px solid $blue-light-color;
+        background-color: #ff9800;
+        border-radius: 50%;
+        z-index: 1;
+      }
+*/
+}
+
+#roomsection .headerroom .music:before {
+  content: "";
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  background-color: #db2d8e;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -26px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  border-radius: 50%;
+}
+
+#roomsection .headerroom .music .sidebarmusic {
+  height: 200px;
+  position: absolute;
+  top: -12px;
+  left: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #05273cea;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  opacity: 0;
+}
+
+#roomsection .headerroom .music .sidebarmusic i {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  color: #db2d8e;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: color 700ms;
+  transition: color 700ms;
+}
+
+#roomsection .headerroom .music .sidebarmusic i:hover {
+  color: white;
+}
+
+#roomsection .headerroom .music .music-note {
+  position: relative;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  font-weight: 500;
+  bottom: 0;
+  top: 0;
+  padding-top: 18px;
+  z-index: 20;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  font-family: "Nunito";
+  background-image: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#roomsection .headerroom .music .music-note::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #106d85;
+  z-index: -1;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+#roomsection .headerroom .music .music-note span {
+  font-size: 50px;
+  color: #db2d8e;
+}
+
+#roomsection .headerroom .music .music-note span i {
+  font-size: 30px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+/*# sourceMappingURL=Roomsection.css.map */

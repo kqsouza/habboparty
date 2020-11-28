@@ -1,3 +1,5 @@
+@import "../../../variables";
+
 #herosection {
   //border: 1px solid blue;
   height: 100vh;
@@ -15,13 +17,13 @@
     }
 
     p {
-      font-family: "Montserrat", sans-serif;
+      font-family: $text-font, sans-serif;
       font-weight: 500;
-      color: #3cbfad;
+      color: $blue-light-color;
       margin-left: 70px;
       margin-bottom: 0;
       span {
-        color: #db2d8e;
+        color: $pink-light-color;
       }
     }
 
