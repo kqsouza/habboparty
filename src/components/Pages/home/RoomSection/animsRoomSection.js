@@ -9,7 +9,12 @@ $(document).ready(function () {
   $(".music-note").click(function () {
     if (isSearchActive === false) {
       tlgsap.to(".music", { duration: 0.4, scale: 0.94, ease: "expo.out" });
-      tlgsap.to(".music", { x: "-180%", ease: "circ.out", duration: 0.5 });
+      tlgsap.to(".music", {
+        x: "-180%",
+        rotate: -360,
+        ease: "expo.out",
+        duration: 1,
+      });
       tlgsap.to(".sidebarmusic", {
         width: "400%",
         opacity: 1,
@@ -23,7 +28,7 @@ $(document).ready(function () {
   });
 
   $(".sidebarmusic .fa-times").click(function () {
-    tlgsap.reverse();
+    tlgsap.reverse(2);
     isSearchActive = false;
   });
 });

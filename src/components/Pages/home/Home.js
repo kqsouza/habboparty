@@ -8,6 +8,8 @@ import RoomSection from "./RoomSection/RoomSection";
 
 import "./Home.css";
 //import "../../menu/animMenu.js";
+import "./barba.js";
+
 export default class Home extends React.Component {
   render() {
     return (

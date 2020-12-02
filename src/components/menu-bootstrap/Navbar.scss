@@ -6,5 +6,160 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 100;
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: #1818289d;
+    padding: 5% 30%;
+
+    .cardLogin {
+      border: none;
+      border-radius: 30px;
+      background-color: #14edaa;
+      position: relative;
+
+      .wow-bg {
+        background-color: #141421;
+        border: 1px solid #2e2e4c;
+        box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.4),
+          -3px -3px 10px rgba(255, 255, 255, 0.06),
+          inset 14px 14px 26px rgba(0, 0, 0, 0.3),
+          inset -3px -3px 15px rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        margin-top: 4px;
+
+        .colorboard {
+          color: #00ffaaed;
+        }
+
+        .textbox-dg {
+          background: rgba(28, 31, 47, 0.16);
+          border-radius: 4px;
+          overflow: hidden;
+          border: 1px solid #2e344d;
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+          /* box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04); */
+          box-shadow: 10px 10px 36px rgba(0, 0, 0, 0.5),
+            -13px -13px 23px rgba(255, 255, 255, 0.03);
+          border-width: 1px 0px 0 1px;
+          margin-top: 15px;
+        }
+
+        .form-control:focus {
+          border: 1px solid #344d2e;
+          color: #495057;
+          outline: 0;
+          background: rgb(17, 20, 31);
+          border-radius: 4px;
+          transition: all 0.3s ease-in-out 0s;
+          /* box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04); */
+          box-shadow: 10px 10px 36px rgba(0, 0, 0, 0.5),
+            -13px -13px 23px rgba(255, 255, 255, 0.03);
+        }
+
+        .btn-link {
+          color: #344d2e;
+        }
+
+        .btn-link:hover {
+          color: #2b7a19;
+          text-decoration: underline;
+        }
+        .btn-primary.focus,
+        .btn-primary:focus {
+          color: #fff;
+          background-color: transparent;
+          border-color: transparent;
+          box-shadow: 0 0 0 0.2rem rgba(0, 255, 110, 0.25);
+        }
+
+        .logn-btn {
+          background: #1c1f2f;
+          border-radius: 30px;
+          overflow: hidden;
+          border: 1px solid #2e344d;
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -ms-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+          /* box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04); */
+          box-shadow: 0px 2px 26px rgba(0, 0, 0, 0.5),
+            0px 7px 13px rgba(255, 255, 255, 0.03);
+          margin-top: 30px;
+        }
+
+        .logn-btn:hover {
+          background-color: #1c1f2f;
+          border-radius: 50px;
+          min-width: 140px;
+          /* box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03), inset 14px 14px 70px rgb(0,0,0,0.2), inset -15px -15px 30px rgba(255,255,255, 0.04); */
+          box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.4),
+            -3px -3px 10px rgba(255, 255, 255, 0.06),
+            inset 14px 14px 26px rgba(0, 0, 0, 0.3),
+            inset -3px -3px 15px rgba(255, 255, 255, 0.05);
+          border-width: 1px 0px 0px 1px;
+          border-style: solid;
+          border-color: #2e344d;
+        }
+
+        .btn-link {
+          color: #344d2e;
+        }
+
+        .btn-link:hover {
+          color: #2b7a19;
+          text-decoration: underline;
+        }
+
+        .mt-6,
+        .my-6 {
+          margin-top: 2rem !important;
+        }
+
+        .socila-btn {
+          height: 40px;
+          border-radius: 10%;
+          width: 40px;
+          box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.4),
+            -3px -3px 10px rgba(255, 255, 255, 0.06),
+            inset 14px 14px 26px rgba(0, 0, 0, 0.3),
+            inset -3px -3px 15px rgba(255, 255, 255, 0.05);
+          border-width: 1px 0px 0px 1px;
+          border-style: solid;
+          border-color: rgba(255, 255, 255, 0.2);
+          margin-right: 10px;
+        }
+
+        .fb-color {
+          color: #3b5998;
+        }
+
+        .incolor {
+          color: #007bff;
+        }
+
+        .tweetcolor {
+          color: #41a4f7;
+        }
+        .driblecolor {
+          color: #e83e8c;
+        }
+
+        .colorboard {
+          color: #00ffaaed;
+        }
+      }
+    }
+  }
 }

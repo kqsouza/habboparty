@@ -1,13 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-nav {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-nav .overlay {
+.overlay {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -18,27 +9,27 @@ nav .overlay {
   padding: 5% 30%;
 }
 
-nav .overlay .cardLogin {
+.overlay .cardLogin {
   border: none;
   border-radius: 30px;
   background-color: #14edaa;
   position: relative;
 }
 
-nav .overlay .cardLogin .wow-bg {
+.overlay .cardLogin .wow-bg {
   background-color: #141421;
   border: 1px solid #2e2e4c;
   -webkit-box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.4), -3px -3px 10px rgba(255, 255, 255, 0.06), inset 14px 14px 26px rgba(0, 0, 0, 0.3), inset -3px -3px 15px rgba(255, 255, 255, 0.05);
           box-shadow: 3px 9px 16px rgba(0, 0, 0, 0.4), -3px -3px 10px rgba(255, 255, 255, 0.06), inset 14px 14px 26px rgba(0, 0, 0, 0.3), inset -3px -3px 15px rgba(255, 255, 255, 0.05);
   border-radius: 10px;
-  margin-top: 4px;
+  margin-top: 114px;
 }
 
-nav .overlay .cardLogin .wow-bg .colorboard {
+.overlay .cardLogin .wow-bg .colorboard {
   color: #00ffaaed;
 }
 
-nav .overlay .cardLogin .wow-bg .textbox-dg {
+.overlay .cardLogin .wow-bg .textbox-dg {
   background: rgba(28, 31, 47, 0.16);
   border-radius: 4px;
   overflow: hidden;
@@ -52,7 +43,7 @@ nav .overlay .cardLogin .wow-bg .textbox-dg {
   margin-top: 15px;
 }
 
-nav .overlay .cardLogin .wow-bg .form-control:focus {
+.overlay .cardLogin .wow-bg .form-control:focus {
   border: 1px solid #344d2e;
   color: #495057;
   outline: 0;
@@ -65,17 +56,17 @@ nav .overlay .cardLogin .wow-bg .form-control:focus {
           box-shadow: 10px 10px 36px rgba(0, 0, 0, 0.5), -13px -13px 23px rgba(255, 255, 255, 0.03);
 }
 
-nav .overlay .cardLogin .wow-bg .btn-link {
+.overlay .cardLogin .wow-bg .btn-link {
   color: #344d2e;
 }
 
-nav .overlay .cardLogin .wow-bg .btn-link:hover {
+.overlay .cardLogin .wow-bg .btn-link:hover {
   color: #2b7a19;
   text-decoration: underline;
 }
 
-nav .overlay .cardLogin .wow-bg .btn-primary.focus,
-nav .overlay .cardLogin .wow-bg .btn-primary:focus {
+.overlay .cardLogin .wow-bg .btn-primary.focus,
+.overlay .cardLogin .wow-bg .btn-primary:focus {
   color: #fff;
   background-color: transparent;
   border-color: transparent;
@@ -83,7 +74,7 @@ nav .overlay .cardLogin .wow-bg .btn-primary:focus {
           box-shadow: 0 0 0 0.2rem rgba(0, 255, 110, 0.25);
 }
 
-nav .overlay .cardLogin .wow-bg .logn-btn {
+.overlay .cardLogin .wow-bg .logn-btn {
   background: #1c1f2f;
   border-radius: 30px;
   overflow: hidden;
@@ -96,7 +87,7 @@ nav .overlay .cardLogin .wow-bg .logn-btn {
   margin-top: 30px;
 }
 
-nav .overlay .cardLogin .wow-bg .logn-btn:hover {
+.overlay .cardLogin .wow-bg .logn-btn:hover {
   background-color: #1c1f2f;
   border-radius: 50px;
   min-width: 140px;
@@ -108,21 +99,21 @@ nav .overlay .cardLogin .wow-bg .logn-btn:hover {
   border-color: #2e344d;
 }
 
-nav .overlay .cardLogin .wow-bg .btn-link {
+.overlay .cardLogin .wow-bg .btn-link {
   color: #344d2e;
 }
 
-nav .overlay .cardLogin .wow-bg .btn-link:hover {
+.overlay .cardLogin .wow-bg .btn-link:hover {
   color: #2b7a19;
   text-decoration: underline;
 }
 
-nav .overlay .cardLogin .wow-bg .mt-6,
-nav .overlay .cardLogin .wow-bg .my-6 {
+.overlay .cardLogin .wow-bg .mt-6,
+.overlay .cardLogin .wow-bg .my-6 {
   margin-top: 2rem !important;
 }
 
-nav .overlay .cardLogin .wow-bg .socila-btn {
+.overlay .cardLogin .wow-bg .socila-btn {
   height: 40px;
   border-radius: 10%;
   width: 40px;
@@ -134,23 +125,23 @@ nav .overlay .cardLogin .wow-bg .socila-btn {
   margin-right: 10px;
 }
 
-nav .overlay .cardLogin .wow-bg .fb-color {
+.overlay .cardLogin .wow-bg .fb-color {
   color: #3b5998;
 }
 
-nav .overlay .cardLogin .wow-bg .incolor {
+.overlay .cardLogin .wow-bg .incolor {
   color: #007bff;
 }
 
-nav .overlay .cardLogin .wow-bg .tweetcolor {
+.overlay .cardLogin .wow-bg .tweetcolor {
   color: #41a4f7;
 }
 
-nav .overlay .cardLogin .wow-bg .driblecolor {
+.overlay .cardLogin .wow-bg .driblecolor {
   color: #e83e8c;
 }
 
-nav .overlay .cardLogin .wow-bg .colorboard {
+.overlay .cardLogin .wow-bg .colorboard {
   color: #00ffaaed;
 }
-/*# sourceMappingURL=Navbar.css.map */
+/*# sourceMappingURL=loginform.css.map */

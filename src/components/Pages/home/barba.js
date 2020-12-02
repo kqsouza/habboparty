@@ -1,0 +1,8 @@
+/*<script>
+  barba.init(
+  {
+    // ...
+  }
+  )
+</script>;
+*/
