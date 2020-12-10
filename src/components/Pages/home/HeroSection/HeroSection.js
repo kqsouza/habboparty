@@ -10,8 +10,8 @@ export default class HeroSection extends React.Component {
   render() {
     return (
       <div id="herosection">
-        <div className="row" style={{ height: "100%" }}>
-          <div className="col-md-6" style={{ height: "100%" }}>
+        <div className="row m-0" style={{ height: "100%" }}>
+          <div className="col-md-6 p-0" style={{ height: "100%" }}>
             <div className="wrp-cont-left">
               <img
                 src={TitleHome}
@@ -34,7 +34,7 @@ export default class HeroSection extends React.Component {
             </div>
           </div>
           <div
-            className="col-md-6 d-flex justify-content-end align-items-end"
+            className="col-md-6 d-flex justify-content-end align-items-end p-0"
             style={{ height: "100%" }}
           ></div>
         </div>

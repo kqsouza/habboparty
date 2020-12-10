@@ -2,7 +2,7 @@
 import React from "react";
 import Button from "../button/Button";
 import Logotipo from "../logotipo/Logotipo";
-import LoginForm from "../loginform/LoginForm";
+import RegisterForm from "../loginform/RegisterForm";
 
 //ESTILIZAÇÃO NAVBAR
 import "./Navbar.css";
@@ -21,7 +21,13 @@ export default class Navbar extends React.Component {
   componentDidMount() {}
 
   showLogin = () => {
-    return <LoginForm />;
+    return (
+      <RegisterForm
+        click={() => {
+          this.setState({ displayLogin: false });
+        }}
+      />
+    );
   };
 
   render() {
@@ -34,7 +40,7 @@ export default class Navbar extends React.Component {
             iconSz="58px"
             leftIcon="27px"
             topIcon="-2px"
-          />{" "}
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -57,13 +63,16 @@ export default class Navbar extends React.Component {
                 text="Login"
                 bgbutton="linear-gradient(90deg, #8b8ee1, #dc51dc, #a977df, #8b8ee1)"
                 id="Login"
+              />
+            </li>
+            <li className="nav-item">
+              <Button
+                text="Registrar"
+                id="Registrar"
                 click={() => {
                   this.setState({ displayLogin: true });
                 }}
               />
-            </li>
-            <li className="nav-item">
-              <Button text="Registrar" id="Registrar" />
             </li>
           </ul>
         </div>
